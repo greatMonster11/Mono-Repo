@@ -1,7 +1,6 @@
 {
-  "name": "ui",
+  "name": "monorepo",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -9,11 +8,15 @@
     "styled-components": "^4.4.1"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@greatmonster11"
   },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:greatMonster11/Mono-Repo.git"
+  },
+  "main": "dist/index.js",
   "scripts": {
-    "main": "dist/index.js",
-    "build-package": "bable src/components",
+    "build-package": "babel src/components -d dist",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
