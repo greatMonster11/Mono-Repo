@@ -8,6 +8,9 @@
     "react-scripts": "3.2.0",
     "styled-components": "^4.4.1"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "main": "dist/index.js",
     "build-package": "bable src/components",
